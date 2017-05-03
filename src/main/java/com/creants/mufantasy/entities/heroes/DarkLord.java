@@ -11,4 +11,5 @@ public class DarkLord extends HeroClass {
 	public DarkLord() {
 		this.name = "Chúa Tể";
 	}
+
 }

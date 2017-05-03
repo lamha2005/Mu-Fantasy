@@ -11,4 +11,6 @@ public class FairyElf extends HeroClass {
 	public FairyElf() {
 		this.name = "Tiên Nữ";
 	}
+
+	
 }

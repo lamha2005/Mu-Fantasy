@@ -11,4 +11,6 @@ public class Summoner extends HeroClass {
 	public Summoner() {
 		this.name = "Thuật Sĩ";
 	}
+
+	
 }

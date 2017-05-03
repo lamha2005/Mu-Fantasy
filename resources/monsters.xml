@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monsters>
+	<Monster>
+		<MonsterIndex></MonsterIndex>
+		<MonsterName></MonsterName>
+		<MonsterImage></MonsterImage>
+		<MonsterLevel></MonsterLevel>
+		<MonsterHP></MonsterHP>
+		<BaseStats>
+			<PhysicAttack>60</PhysicAttack>
+			<MagicPower>10</MagicPower>
+			<HealthPoint>150</HealthPoint>
+			<ManaPoint>50</ManaPoint>
+			<Defense>30</Defense>
+			<MagicResistance>10</MagicResistance>
+		</BaseStats>
+		<SubStats>
+			<Speed>20</Speed>
+			<Accuracy>0.05</Accuracy>
+			<CriticalChance>0.1</CriticalChance>
+			<DefenseensePenetration>10</DefenseensePenetration>
+			<DefenseenseIgnore>0.05</DefenseenseIgnore>
+			<MagicResistanceistancePenetration>10</MagicResistanceistancePenetration>
+			<MagicResistanceistanceIgnore>0.05</MagicResistanceistanceIgnore>
+			<ManaBreak>6</ManaBreak>
+			<LifeSteal>0.03</LifeSteal>
+			<HealthRegeneration>20</HealthRegeneration>
+			<Manaregeneration>25</Manaregeneration>
+		</SubStats>
+	</Monster>
+
+</Monsters>
+

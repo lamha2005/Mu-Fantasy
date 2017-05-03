@@ -1,30 +1,35 @@
 package com.creants.mufantasy.entities;
 
 import com.creants.mufantasy.entities.states.AdditionStats;
-import com.creants.mufantasy.entities.states.BaseStats;
-import com.creants.mufantasy.entities.states.SubStats;
 
 /**
  * @author LamHM
  *
  */
-public abstract class HeroClass {
-	protected int id;
-	protected String name;
-	protected int level;
+public abstract class HeroClass extends Character {
+	private String id;
 	protected int exp;
-	private BaseStats baseStats;
-	private SubStats subStats;
+
 	private AdditionStats additionStats;
 
 
-	public int getId() {
+	public HeroClass() {
+		id = this.getClass().getSimpleName();
+	}
+
+
+	public String getId() {
 		return id;
 	}
 
 
-	public void setId(int id) {
-		this.id = id;
+	public int getExp() {
+		return exp;
+	}
+
+
+	public void setExp(int exp) {
+		this.exp = exp;
 	}
 
 
@@ -48,26 +53,6 @@ public abstract class HeroClass {
 	}
 
 
-	public BaseStats getBaseStats() {
-		return baseStats;
-	}
-
-
-	public void setBaseStats(BaseStats baseStats) {
-		this.baseStats = baseStats;
-	}
-
-
-	public SubStats getSubStats() {
-		return subStats;
-	}
-
-
-	public void setSubStats(SubStats subStats) {
-		this.subStats = subStats;
-	}
-
-
 	public AdditionStats getAdditionStats() {
 		return additionStats;
 	}
@@ -81,6 +66,5 @@ public abstract class HeroClass {
 	public int getExpPoolSize() {
 		return -1;
 	}
-	
 
 }

@@ -11,4 +11,5 @@ public class MagicGladiator extends HeroClass {
 	public MagicGladiator() {
 		this.name = "Đấu Sĩ";
 	}
+
 }

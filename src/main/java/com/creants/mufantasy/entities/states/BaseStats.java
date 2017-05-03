@@ -1,5 +1,7 @@
 package com.creants.mufantasy.entities.states;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 /**
  * Những chỉ số chính của nhân vật
  * 
@@ -7,11 +9,17 @@ package com.creants.mufantasy.entities.states;
  * 
  */
 public class BaseStats {
+	@JacksonXmlProperty(localName="PhysicAttack")
 	private int atk;
+	@JacksonXmlProperty(localName="MagicPower")
 	private int mag;
+	@JacksonXmlProperty(localName="HealthPoint")
 	private int hp;
+	@JacksonXmlProperty(localName="ManaPoint")
 	private int mp;
+	@JacksonXmlProperty(localName="Defense")
 	private int def;
+	@JacksonXmlProperty(localName="MagicResistance")
 	private int res;
 
 

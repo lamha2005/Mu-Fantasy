@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Heroes>
+	<DarkKnight>
+		<BaseStats>
+			<PhysicAttack>60</PhysicAttack>
+			<MagicPower>10</MagicPower>
+			<HealthPoint>150</HealthPoint>
+			<ManaPoint>50</ManaPoint>
+			<Defense>30</Defense>
+			<MagicResistance>10</MagicResistance>
+		</BaseStats>
+		<SubStats>
+			<Speed>20</Speed>
+			<Accuracy>0.05</Accuracy>
+			<CriticalChance>0.1</CriticalChance>
+			<DefenseensePenetration>10</DefenseensePenetration>
+			<DefenseenseIgnore>0.05</DefenseenseIgnore>
+			<MagicResistanceistancePenetration>10</MagicResistanceistancePenetration>
+			<MagicResistanceistanceIgnore>0.05</MagicResistanceistanceIgnore>
+			<ManaBreak>6</ManaBreak>
+			<LifeSteal>0.03</LifeSteal>
+			<HealthRegeneration>20</HealthRegeneration>
+			<Manaregeneration>25</Manaregeneration>
+		</SubStats>
+	</DarkKnight>
+
+	<DarkWizard>
+		<BaseStats>
+			<PhysicAttack>10</PhysicAttack>
+			<MagicPower>60</MagicPower>
+			<HealthPoint>100</HealthPoint>
+			<ManaPoint>100</ManaPoint>
+			<Defense>20</Defense>
+			<MagicResistance>10</MagicResistance>
+		</BaseStats>
+		<SubStats>
+			<Speed>30</Speed>
+			<Accuracy>0.05</Accuracy>
+			<CriticalChance>0.1</CriticalChance>
+			<DefenseensePenetration>10</DefenseensePenetration>
+			<DefenseenseIgnore>0.05</DefenseenseIgnore>
+			<MagicResistanceistancePenetration>10
+			</MagicResistanceistancePenetration>
+			<MagicResistanceistanceIgnore>0.05</MagicResistanceistanceIgnore>
+			<ManaBreak>6</ManaBreak>
+			<LifeSteal>0.03</LifeSteal>
+			<HealthRegeneration>20</HealthRegeneration>
+			<Manaregeneration>25</Manaregeneration>
+		</SubStats>
+	</DarkWizard>
+
+	<FairyElf>
+		<BaseStats>
+			<PhysicAttack>35</PhysicAttack>
+			<MagicPower>35</MagicPower>
+			<HealthPoint>90</HealthPoint>
+			<ManaPoint>110</ManaPoint>
+			<Defense>30</Defense>
+			<MagicResistance>10</MagicResistance>
+		</BaseStats>
+		<SubStats>
+			<Speed>15</Speed>
+			<Accuracy>0.05</Accuracy>
+			<CriticalChance>0.1</CriticalChance>
+			<DefenseensePenetration>10</DefenseensePenetration>
+			<DefenseenseIgnore>0.05</DefenseenseIgnore>
+			<MagicResistanceistancePenetration>10
+			</MagicResistanceistancePenetration>
+			<MagicResistanceistanceIgnore>0.05</MagicResistanceistanceIgnore>
+			<ManaBreak>6</ManaBreak>
+			<LifeSteal>0.03</LifeSteal>
+			<HealthRegeneration>20</HealthRegeneration>
+			<Manaregeneration>25</Manaregeneration>
+		</SubStats>
+	</FairyElf>
+</Heroes>
+

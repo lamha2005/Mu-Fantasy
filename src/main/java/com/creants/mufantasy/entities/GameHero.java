@@ -7,11 +7,44 @@ package com.creants.mufantasy.entities;
 public class GameHero {
 	// server_id#user_id#hero_no
 	private String id;
+	private int userId;
+	private String serverId;
 	private String name;
 	private int level;
 	private long zen;
 	private long soul;
 	private int exp;
+	private int statmina;
+
+
+	public int getStatmina() {
+		return statmina;
+	}
+
+
+	public void setStatmina(int statmina) {
+		this.statmina = statmina;
+	}
+
+
+	public String getServerId() {
+		return serverId;
+	}
+
+
+	public void setServerId(String serverId) {
+		this.serverId = serverId;
+	}
+
+
+	public int getUserId() {
+		return userId;
+	}
+
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
 
 
 	public String getId() {

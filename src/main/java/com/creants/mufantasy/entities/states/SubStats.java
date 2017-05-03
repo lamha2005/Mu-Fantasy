@@ -1,5 +1,7 @@
 package com.creants.mufantasy.entities.states;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 /**
  * Những chỉ số phụ của nhân vật
  * 
@@ -8,16 +10,27 @@ package com.creants.mufantasy.entities.states;
  * 
  */
 public class SubStats {
+	@JacksonXmlProperty(localName = "Speed")
 	private int spd;
-	private int acc;
-	private int critch;
+	@JacksonXmlProperty(localName = "Accuracy")
+	private float acc;
+	@JacksonXmlProperty(localName = "CriticalChance")
+	private float critch;
+	@JacksonXmlProperty(localName = "DefenseensePenetration")
 	private int defpe;
-	private int defig;
+	@JacksonXmlProperty(localName = "DefenseenseIgnore")
+	private float defig;
+	@JacksonXmlProperty(localName = "MagicResistanceistancePenetration")
 	private int respen;
-	private int resign;
+	@JacksonXmlProperty(localName = "MagicResistanceistanceIgnore")
+	private float resign;
+	@JacksonXmlProperty(localName = "ManaBreak")
 	private int manabrk;
-	private int lifestl;
+	@JacksonXmlProperty(localName = "LifeSteal")
+	private float lifestl;
+	@JacksonXmlProperty(localName = "HealthRegeneration")
 	private int hpreg;
+	@JacksonXmlProperty(localName = "Manaregeneration")
 	private int mpreg;
 
 
@@ -31,26 +44,6 @@ public class SubStats {
 	}
 
 
-	public int getAcc() {
-		return acc;
-	}
-
-
-	public void setAcc(int acc) {
-		this.acc = acc;
-	}
-
-
-	public int getCritch() {
-		return critch;
-	}
-
-
-	public void setCritch(int critch) {
-		this.critch = critch;
-	}
-
-
 	public int getDefpe() {
 		return defpe;
 	}
@@ -58,16 +51,6 @@ public class SubStats {
 
 	public void setDefpe(int defpe) {
 		this.defpe = defpe;
-	}
-
-
-	public int getDefig() {
-		return defig;
-	}
-
-
-	public void setDefig(int defig) {
-		this.defig = defig;
 	}
 
 
@@ -81,16 +64,6 @@ public class SubStats {
 	}
 
 
-	public int getResign() {
-		return resign;
-	}
-
-
-	public void setResign(int resign) {
-		this.resign = resign;
-	}
-
-
 	public int getManabrk() {
 		return manabrk;
 	}
@@ -98,16 +71,6 @@ public class SubStats {
 
 	public void setManabrk(int manabrk) {
 		this.manabrk = manabrk;
-	}
-
-
-	public int getLifestl() {
-		return lifestl;
-	}
-
-
-	public void setLifestl(int lifestl) {
-		this.lifestl = lifestl;
 	}
 
 
@@ -128,6 +91,56 @@ public class SubStats {
 
 	public void setMpreg(int mpreg) {
 		this.mpreg = mpreg;
+	}
+
+
+	public float getAcc() {
+		return acc;
+	}
+
+
+	public void setAcc(float acc) {
+		this.acc = acc;
+	}
+
+
+	public float getCritch() {
+		return critch;
+	}
+
+
+	public void setCritch(float critch) {
+		this.critch = critch;
+	}
+
+
+	public float getResign() {
+		return resign;
+	}
+
+
+	public void setResign(float resign) {
+		this.resign = resign;
+	}
+
+
+	public float getLifestl() {
+		return lifestl;
+	}
+
+
+	public void setLifestl(float lifestl) {
+		this.lifestl = lifestl;
+	}
+
+
+	public float getDefig() {
+		return defig;
+	}
+
+
+	public void setDefig(float defig) {
+		this.defig = defig;
 	}
 
 }

@@ -11,4 +11,6 @@ public class RageFighter extends HeroClass {
 	public RageFighter() {
 		this.name = "Thiết Binh";
 	}
+
+
 }

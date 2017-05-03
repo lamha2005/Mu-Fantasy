@@ -11,4 +11,5 @@ public class DarkKnight extends HeroClass {
 	public DarkKnight() {
 		name = "Chiến Binh";
 	}
+
 }

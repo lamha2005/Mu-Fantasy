@@ -11,4 +11,5 @@ public class DarkWizard extends HeroClass {
 	public DarkWizard() {
 		this.name = "Pháp Sư";
 	}
+
 }

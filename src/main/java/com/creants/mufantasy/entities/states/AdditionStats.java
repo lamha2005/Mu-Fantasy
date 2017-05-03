@@ -1,6 +1,8 @@
 package com.creants.mufantasy.entities.states;
 
 /**
+ * Các chỉ số cộng thêm khi mặc đồ
+ * 
  * @author LamHM
  *
  */
