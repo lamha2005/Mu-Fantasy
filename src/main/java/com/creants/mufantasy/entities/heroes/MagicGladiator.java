@@ -8,8 +8,9 @@ import com.creants.mufantasy.entities.HeroClass;
  */
 public class MagicGladiator extends HeroClass {
 
-	public MagicGladiator() {
-		this.name = "Đấu Sĩ";
+	@Override
+	public void init() {
+
 	}
 
 }

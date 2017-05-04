@@ -8,9 +8,9 @@ import com.creants.mufantasy.entities.HeroClass;
  */
 public class Summoner extends HeroClass {
 
-	public Summoner() {
-		this.name = "Thuật Sĩ";
+	@Override
+	public void init() {
+
 	}
 
-	
 }

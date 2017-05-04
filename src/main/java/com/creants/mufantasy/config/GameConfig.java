@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 
+import com.creants.mufantasy.entities.HeroClassType;
 import com.creants.mufantasy.entities.heroes.DarkKnight;
 import com.creants.mufantasy.entities.heroes.DarkWizard;
 import com.creants.mufantasy.entities.heroes.FairyElf;
@@ -17,11 +18,12 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
  */
 public class GameConfig {
 	private static final String HEROES_CONFIG = "resources/heroes.xml";
-	private static final String MONSTERS_CONFIG = "resources/heroes.xml";
+	private static final String MONSTERS_CONFIG = "resources/monsters.xml";
 
 
 	public static void init() {
 		loadHeros();
+		loadMonsters();
 	}
 
 
@@ -44,9 +46,14 @@ public class GameConfig {
 	}
 
 
+	public static void loadMonsters() {
+
+	}
+
+
 	public static void main(String[] args) {
 		GameConfig.init();
-		DarkWizard hero = HeroClassManager.getInstance().getHero(DarkWizard.class);
+		DarkKnight hero = HeroClassManager.getInstance().getHero(HeroClassType.DARK_KNIGHT);
 		System.out.println(hero);
 	}
 

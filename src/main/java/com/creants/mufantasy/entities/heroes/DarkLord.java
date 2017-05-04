@@ -8,8 +8,9 @@ import com.creants.mufantasy.entities.HeroClass;
  */
 public class DarkLord extends HeroClass {
 
-	public DarkLord() {
-		this.name = "Chúa Tể";
+	@Override
+	public void init() {
+
 	}
 
 }

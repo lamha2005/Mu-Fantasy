@@ -1,6 +1,7 @@
 package com.creants.mufantasy.entities.heroes;
 
 import com.creants.mufantasy.entities.HeroClass;
+import com.creants.mufantasy.entities.HeroClassType;
 
 /**
  * @author LamHM
@@ -8,8 +9,12 @@ import com.creants.mufantasy.entities.HeroClass;
  */
 public class DarkKnight extends HeroClass {
 
-	public DarkKnight() {
-		name = "Chiến Binh";
+	@Override
+	public void init() {
+		id = HeroClassType.DARK_KNIGHT.id;
+		name = HeroClassType.DARK_KNIGHT.name;
 	}
+	
+	
 
 }

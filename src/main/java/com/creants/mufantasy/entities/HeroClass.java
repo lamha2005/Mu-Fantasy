@@ -7,18 +7,21 @@ import com.creants.mufantasy.entities.states.AdditionStats;
  *
  */
 public abstract class HeroClass extends Character {
-	private String id;
+	protected int id;
 	protected int exp;
 
 	private AdditionStats additionStats;
 
 
 	public HeroClass() {
-		id = this.getClass().getSimpleName();
+		init();
 	}
 
 
-	public String getId() {
+	public abstract void init();
+
+
+	public int getId() {
 		return id;
 	}
 

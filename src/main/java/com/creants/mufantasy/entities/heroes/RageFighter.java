@@ -8,9 +8,9 @@ import com.creants.mufantasy.entities.HeroClass;
  */
 public class RageFighter extends HeroClass {
 
-	public RageFighter() {
-		this.name = "Thiết Binh";
-	}
+	@Override
+	public void init() {
 
+	}
 
 }
