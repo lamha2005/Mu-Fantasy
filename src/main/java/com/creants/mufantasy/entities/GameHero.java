@@ -1,20 +1,35 @@
 package com.creants.mufantasy.entities;
 
+import org.springframework.data.annotation.Id;
+
 /**
  * @author LamHM
  *
  */
 public class GameHero {
-	// server_id#user_id#hero_no
+	// server_id#user_id
+	@Id
 	private String id;
-	private int userId;
-	private String serverId;
+	private long userId;
+	private String serverName;
 	private String name;
 	private int level;
 	private long zen;
 	private long soul;
 	private int exp;
 	private int statmina;
+
+
+	public GameHero(String serverName, long userId) {
+		this.serverName = serverName;
+		this.userId = userId;
+		this.id = genId();
+	}
+
+
+	private String genId() {
+		return serverName + "#" + userId;
+	}
 
 
 	public int getStatmina() {
@@ -27,22 +42,22 @@ public class GameHero {
 	}
 
 
-	public String getServerId() {
-		return serverId;
+	public String getServerName() {
+		return serverName;
 	}
 
 
-	public void setServerId(String serverId) {
-		this.serverId = serverId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 
 
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
 
 
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
