@@ -18,6 +18,8 @@ public class GameHero {
 	private long soul;
 	private int exp;
 	private int statmina;
+	private int vipLevel;
+	private int vipPoint;
 
 
 	public GameHero(String serverName, long userId) {
@@ -119,6 +121,26 @@ public class GameHero {
 
 	public void setExp(int exp) {
 		this.exp = exp;
+	}
+
+
+	public int getVipLevel() {
+		return vipLevel;
+	}
+
+
+	public void setVipLevel(int vipLevel) {
+		this.vipLevel = vipLevel;
+	}
+
+
+	public int getVipPoint() {
+		return vipPoint;
+	}
+
+
+	public void setVipPoint(int vipPoint) {
+		this.vipPoint = vipPoint;
 	}
 
 }

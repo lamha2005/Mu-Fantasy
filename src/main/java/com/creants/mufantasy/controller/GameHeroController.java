@@ -1,5 +1,7 @@
 package com.creants.mufantasy.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,9 +28,9 @@ public class GameHeroController {
 
 	@PostMapping(value = "create", produces = "application/json;charset=UTF-8")
 	public @ResponseBody Message create(@RequestParam(value = "server_name", required = false) String serverName,
-			@RequestParam(value = "hero_name") String heroName) throws Exception {
+			@RequestParam(value = "hero_name") String heroName, HttpSession session) throws Exception {
 		String serverId = "mus1";
-		long userId = 258;
+		long userId = (long) session.getAttribute("USER_ID");
 
 		GameHero gameHero = repository.findOne(serverId + "#" + userId);
 		if (gameHero != null) {
